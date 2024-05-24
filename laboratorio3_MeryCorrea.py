@@ -25,16 +25,6 @@ salt= "dc9b55a30b2aa326b23f8d603eca9b64"
 passw = "35a7b194c19915e7ff698a8656da1fd68ff73a0adc36cc4bfb1a2dd90333d91b5689075d0acab015c9c109082b1cf1d607da13a224b058b0749ef377f1234434"
 
 
-"""
-#Llenar la lista possible_pwd con todos los datos de rockyou.txt
-def read_file_to_list(file_path):
-    #Lee el archivo y guarda cada línea en una lista, eliminando espacios en blanco.
-    possible_pwd = []
-    with open(file_path, 'r', encoding='utf-8' , errors='ignore') as file:
-        for line in file:
-            possible_pwd.append(line.strip())
-    return possible_pwd"""
-
 # Llenar la lista possible_pwd con todos los datos de rockyou.txt
 def read_file_to_list(file_path, start_line, end_line):
     possible_pwd = []
